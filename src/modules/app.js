@@ -56,11 +56,9 @@ window.updateList = (id) => {
     if (item.index - 1 === id) {
       item.completed = updateCheckbox;
     }
-   
+
     return item;
   });
-  console.log(updateCheckbox)
-  
   localStorage.setItem('listStorage', JSON.stringify(updatedArray));
 };
 
